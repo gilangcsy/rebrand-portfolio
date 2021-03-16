@@ -4,7 +4,6 @@ import { Link as LinkS } from 'react-scroll'
 import { FaTimes, FaSearch } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-background: white;
 height:75px;
 /* margin-top: -80px; */
 display: flex;
@@ -33,7 +32,7 @@ max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #e5989b;
+color:#dddddd;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -48,12 +47,12 @@ export const NavLogo = styled(LinkR)`
 }
 
 &:hover {
-    color:#e5989b;
+color:#dddddd;
 }
 `
 
 export const NavLogoMobile = styled(LinkR)`
-color: #e5989b;
+color:#dddddd;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -68,7 +67,7 @@ text-decoration:none !important;
 }
 
 &:hover {
-    color:#e5989b;
+    color:white;
 }
 `
 
@@ -131,7 +130,7 @@ cursor:pointer;
 `
 
 export const NavLinks = styled(LinkS)`
-color: #444053;
+color: white;
 font-weight:medium;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 display:flex;
@@ -142,10 +141,9 @@ height:100%;
 transition: 0.2s ease-in-out;
 
 &:hover {
-        color:black;
+        color:white;
         margin-top:-2px;
         transition: 0.2s ease-in-out;
-        border-bottom: 2px solid black;
     }
 
 &.active {

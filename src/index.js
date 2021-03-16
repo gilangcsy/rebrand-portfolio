@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Hero from './component/Hero';
 import Navbar from './component/Navbar';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -7,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
+    <Hero />
   </React.StrictMode>,
   document.getElementById('root')
 );
