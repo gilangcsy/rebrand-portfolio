@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import { FaTimes, FaSearch } from 'react-icons/fa'
+import { BsMoon, BsSun } from "react-icons/bs";
 
 export const Nav = styled.nav`
 height:75px;
@@ -14,6 +15,7 @@ top: 0;
 width:100%;
 position: fixed;
 z-index: 999;
+    background-color: transparent;
 
 @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -32,7 +34,7 @@ max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkR)`
-color:#dddddd;
+    color: ${({ isDark }) => (isDark ? '#dddddd' : '#17181d')};
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -47,7 +49,7 @@ color:#dddddd;
 }
 
 &:hover {
-color:#dddddd;
+    color: ${({ isDark }) => (isDark ? '#dddddd' : '#17181d')};
 }
 `
 
@@ -130,7 +132,7 @@ cursor:pointer;
 `
 
 export const NavLinks = styled(LinkS)`
-color: white;
+    color: ${({ isDark }) => (isDark ? '#dddddd' : '#17181d')};
 font-weight:medium;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 display:flex;
@@ -141,7 +143,7 @@ height:100%;
 transition: 0.2s ease-in-out;
 
 &:hover {
-        color:white;
+    color: ${({ isDark }) => (isDark ? '#dddddd' : 'black')};
         margin-top:-2px;
         transition: 0.2s ease-in-out;
     }
@@ -245,3 +247,16 @@ export const SearchBox = styled.div`
 //     padding:10px;
 //     font-weight:lighter;
 // `
+
+export const ThemeButton = styled.div`
+right:0;
+`
+export const Moon = styled(BsMoon)`
+color:#dddddd;
+margin-top:-2px;
+`
+
+export const Sun = styled(BsSun)`
+color:#373738;
+margin-top:-2px;
+`
