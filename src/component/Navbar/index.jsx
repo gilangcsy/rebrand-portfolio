@@ -69,7 +69,7 @@ const Navbar = ({ toggle, isOpen, theme, isDark }) => {
                                         Contact
                                     </NavLinks>
                                 </NavItem>
-                                <BootstrapSwitchButton checked={true} width={100} onlabel={<Moon />} offlabel={<Sun />} onstyle='dark' onChange={theme} />
+                                <BootstrapSwitchButton checked={true} width={60} size="sm" onlabel={<Moon />} offlabel={<Sun />} onstyle='dark' onChange={theme} />
                             </NavMenu>
 
                             {/* <SearchBox>

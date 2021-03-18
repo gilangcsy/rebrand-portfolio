@@ -253,10 +253,10 @@ right:0;
 `
 export const Moon = styled(BsMoon)`
 color:#dddddd;
-margin-top:-2px;
+margin-top:-5px;
 `
 
 export const Sun = styled(BsSun)`
 color:#373738;
-margin-top:-2px;
+margin-top:-5px;
 `

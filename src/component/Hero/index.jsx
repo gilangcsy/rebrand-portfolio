@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { HeroSection, HeroTitle, HeroSubTitle, LinkedIn, WhatsApp, Github } from './HeroElements'
+import { HeroSection, HeroTitle, HeroSubTitle, Social } from './HeroElements'
+import { AiFillLinkedin, AiOutlineWhatsApp, AiFillGithub } from "react-icons/ai";
 import '../../assets/css/styles.css'
 import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
@@ -26,11 +27,18 @@ const Hero = ({ isDark }) => {
                     </Row>
                     <Row>
                         <Col className="d-flex justify-content-center">
-                            <a href="https://mail.google.com/mail/u/0/" target="_blank">
-                                <LinkedIn isDark={isDark} />
-                                <Github isDark={isDark} />
-                                <WhatsApp isDark={isDark} />
-                            </a>
+                            {/* <a href="https://mail.google.com/mail/u/0/" target="_blank"> */}
+                            <Social isDark={isDark}>
+                                <AiFillLinkedin />
+                            </Social>
+
+                            <Social isDark={isDark}>
+                                <AiFillGithub />
+                            </Social>
+
+                            <Social isDark={isDark}>
+                                <AiOutlineWhatsApp />
+                            </Social>
                         </Col>
                     </Row>
                 </Container>
