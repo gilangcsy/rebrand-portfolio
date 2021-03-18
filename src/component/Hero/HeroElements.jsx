@@ -69,14 +69,17 @@ font-size:1rem;
     }
 `
 
-export const LinkedIn = styled(AiFillLinkedin)`
+export const Social = styled.a`
     color: ${({ isDark }) => (isDark ? '#dddddd' : '#17181d')};
     font-size:2rem;
     cursor:pointer;
-    margin: 50px 10px 0px 0px;
+    margin: 30px 10px 0px 0px;
+    text-decoration:none;
+    outline:none;
     &:hover {
         transform: scale(1.5);
         transition: 0.2s;
+        color: ${({ isDark }) => (isDark ? '#dddddd' : '#17181d')};
     }
 `
 export const WhatsApp = styled(AiOutlineWhatsApp)`
